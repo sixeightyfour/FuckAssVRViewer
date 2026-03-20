@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VR Graph</title>
+  <style>
+    body { margin:0; overflow:hidden; background:black; color:white; }
+    #ui {
+      position:fixed;
+      top:10px;
+      left:10px;
+      background:rgba(0,0,0,0.7);
+      padding:10px;
+      font-family:sans-serif;
+      z-index:10;
+    }
+  </style>
+</head>
+<body>
+
+<div id="ui">
+  <div>Scale: <input id="scale" type="range" min="0.0005" max="0.02" step="0.0005" value="0.003"></div>
+  <div style="margin-top:8px;font:12px sans-serif;line-height:1.4;">
+    Desktop: hold left mouse and look around. W/A/S/D to fly, Space up, Shift down, +/- scale.
+  </div>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.161.0/build/three.module.js",
+    "three/addons/": "https://unpkg.com/three@0.161.0/examples/jsm/"
+  }
+}
+</script>
+
+<script type="module" src="./main.js"></script>
+
+</body>
+</html>
