@@ -1,0 +1,9 @@
+{
+  "name": "vr-graph-viewer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "replace-positions": "node scripts/replace-positions.mjs data/source/graph_with_positions.json data/source/positions.json viewer/assets/graph.json",
+    "serve": "npx serve ."
+  }
+}
